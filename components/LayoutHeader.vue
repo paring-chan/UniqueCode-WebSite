@@ -3,7 +3,7 @@
     <div class="flex px-4 container h-full mx-auto" style="align-items: center">
       <nuxt-link to="/"><div class="text-xl">UniqueCode</div></nuxt-link>
       <div class="flex-grow" />
-      RIGHT
+      <div>메뉴메뉴</div>
     </div>
   </div>
 </template>
