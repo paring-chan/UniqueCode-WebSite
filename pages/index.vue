@@ -1,5 +1,8 @@
 <template>
-  <div>UniqueCode</div>
+  <div>
+    <content-spacer />
+    홈
+  </div>
 </template>
 
 <script lang="ts">
