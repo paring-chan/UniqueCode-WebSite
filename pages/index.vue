@@ -1,7 +1,5 @@
 <template>
-  <div>
-    UniqueCode
-  </div>
+  <div>UniqueCode</div>
 </template>
 
 <script lang="ts">
