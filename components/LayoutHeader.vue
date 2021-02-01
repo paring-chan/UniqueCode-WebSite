@@ -7,7 +7,7 @@
       <div class="flex-grow" />
       <div class="flex">
         <menu-item>MEMBERS</menu-item>
-        <menu-item>머라써야되지</menu-item>
+        <menu-item>RECRUIT</menu-item>
       </div>
     </div>
   </div>
