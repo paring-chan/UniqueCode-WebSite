@@ -1,7 +1,7 @@
 <template>
   <div>
     <layout-header />
-    <div class="container mx-auto px-4">
+    <div class="container mx-auto">
       <Nuxt />
     </div>
   </div>
