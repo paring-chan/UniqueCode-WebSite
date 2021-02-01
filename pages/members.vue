@@ -1,7 +1,7 @@
 <template>
   <div>
     <content-spacer />
-    test
+    멤버목록
   </div>
 </template>
 
