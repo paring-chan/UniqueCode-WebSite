@@ -6,9 +6,8 @@
       >
       <div class="flex-grow" />
       <div class="flex">
-        <menu-item>아이템1</menu-item>
-        <menu-item>아이템2</menu-item>
-        <menu-item>아이템3</menu-item>
+        <menu-item>MEMBERS</menu-item>
+        <menu-item>머라써야되지</menu-item>
       </div>
     </div>
   </div>
