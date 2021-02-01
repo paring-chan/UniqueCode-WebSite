@@ -6,8 +6,8 @@
       >
       <div class="flex-grow" />
       <div class="flex">
-        <menu-item>MEMBERS</menu-item>
-        <menu-item>RECRUIT</menu-item>
+        <menu-item to="/members">MEMBERS</menu-item>
+        <menu-item to="/recruit">RECRUIT</menu-item>
       </div>
     </div>
   </div>
