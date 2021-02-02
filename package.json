@@ -28,7 +28,8 @@
     "autoprefixer": "^10",
     "core-js": "^3.8.3",
     "nuxt": "^2.14.12",
-    "postcss": "^8",
+    "postcss": "^8.2.4",
+    "postcss-cli": "8",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat",
     "vue": "^2.6.12",
     "vue-fullpage.js": "^0.1.6"
