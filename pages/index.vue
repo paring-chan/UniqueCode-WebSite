@@ -7,7 +7,7 @@
             <div class="text-3xl font-bold">UniqueCode</div>
             <div class="text-2xl">세상을 바꾸는 청소년 팀.</div>
             <button
-              class="p-2 bg-white hover:bg-black border hover:text-white text-black transition-colors border-black"
+              class="p-2 w-36 rounded-md bg-white hover:bg-black border hover:text-white text-black transition-colors border-black"
               @click="$refs.page.api.moveSectionDown()"
             >
               더 알아보기
