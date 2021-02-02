@@ -3,7 +3,7 @@
     <client-only>
       <full-page ref="page" :options="options">
         <div ref="sec1" class="section">
-          <div class="container mx-auto">
+          <div class="container mx-auto px-4 sm:px-0">
             <div class="text-3xl font-bold">UniqueCode</div>
             <div class="text-2xl">세상을 바꾸는 청소년 팀.</div>
             <button
