@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="select-none">
     <layout-header />
-    <div class="container mx-auto">
+    <div>
       <Nuxt />
     </div>
   </div>

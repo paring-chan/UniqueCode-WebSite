@@ -1,7 +1,6 @@
 <template>
   <div>
-    <content-spacer />
-    멤버목록
+    <content-spacer> 멤버목록 </content-spacer>
   </div>
 </template>
 

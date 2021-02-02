@@ -2,15 +2,17 @@
   <div>
     <client-only>
       <full-page ref="page" :options="options">
-        <div class="section">
-          <div class="text-3xl font-bold">UniqueCode</div>
-          <div class="text-2xl">세상을 바꾸는 청소년 팀.</div>
-          <button
-            @click="$refs.page.api.moveSectionDown()"
-            class="p-2 bg-white hover:bg-black border hover:text-white text-black transition-colors border-black"
-          >
-            더 알아보기
-          </button>
+        <div ref="sec1" class="section">
+          <div class="container mx-auto">
+            <div class="text-3xl font-bold">UniqueCode</div>
+            <div class="text-2xl">세상을 바꾸는 청소년 팀.</div>
+            <button
+              class="p-2 bg-white hover:bg-black border hover:text-white text-black transition-colors border-black"
+              @click="$refs.page.api.moveSectionDown()"
+            >
+              더 알아보기
+            </button>
+          </div>
         </div>
         <div class="section">SECTION 2</div>
         <div class="section">SECTION 3</div>
