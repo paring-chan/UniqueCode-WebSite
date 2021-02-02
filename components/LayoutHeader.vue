@@ -3,7 +3,7 @@
     <div class="flex pl-4" style="align-items: center">
       <nuxt-link to="/"
         ><div class="text-xl">
-          <img alt="logo" class="inline w-8" src="~/assets/images/logo.png" />
+          <img alt="logo" class="inline w-6" src="~/assets/images/logo.png" />
           UniqueCode
         </div></nuxt-link
       >

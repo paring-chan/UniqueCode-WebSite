@@ -14,7 +14,9 @@
             </button>
           </div>
         </div>
-        <div class="section">SECTION 2</div>
+        <div class="section">
+          <div class="container mx-auto px-4">asdf</div>
+        </div>
         <div class="section">SECTION 3</div>
       </full-page>
     </client-only>
