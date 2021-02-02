@@ -14,7 +14,5 @@ module.exports = {
     extend: {},
   },
   plugins: [],
-  purgeCss: {
-    whitelistPatterns: [/^ct/],
-  },
+  whitelistPatterns: [/^ct/],
 }
