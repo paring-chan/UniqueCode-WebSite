@@ -36,7 +36,7 @@
                 :image="require('../assets/images/olivetoast.png')"
                 to="/projects/olivetoast"
                 title="올리브토스트"
-                description="설명설명"
+                description="올리브토스트는 디스코드 사용을 편리하게 만들어주는 봇입니다!"
               />
               <ProjectCard
                 :image="require('../assets/images/uniquebots.png')"
