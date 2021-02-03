@@ -20,11 +20,19 @@
             <div class="text-lg">UniqueCode에서 진행하는 프로젝트들이에요!</div>
             <div class="bg-black w-full h-1 mb-2" />
             <div class="grid grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
-              <img
-                :src="require('../assets/images/strawberrydonut.png')"
-                alt="strawberryDonut"
-                class="rounded-lg"
-              />
+              <div class="relative">
+                <img
+                  :src="require('../assets/images/strawberrydonut.png')"
+                  alt="strawberryDonut"
+                  class="rounded-lg"
+                />
+                <div
+                  class="w-full h-full bg-black text-white absolute top-0 left-0 rounded-lg opacity-0 hover:opacity-100 bg-opacity-0 hover:bg-opacity-50 transition-all cursor-pointer flex text-center"
+                  style="align-items: center; justify-content: center"
+                >
+                  test
+                </div>
+              </div>
             </div>
           </div>
         </div>
