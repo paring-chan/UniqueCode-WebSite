@@ -15,7 +15,11 @@
           </div>
         </div>
         <div class="section">
-          <div class="container mx-auto px-4">asdf</div>
+          <div class="container mx-auto px-4">
+            <div class="text-4xl font-bold">PROJECTS</div>
+            <div class="text-lg">UniqueCode에서 진행하는 프로젝트들이에요!</div>
+            <div class="bg-black w-full h-1" />
+          </div>
         </div>
         <div class="section">SECTION 3</div>
       </full-page>
