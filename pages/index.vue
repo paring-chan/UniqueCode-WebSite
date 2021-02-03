@@ -18,7 +18,14 @@
           <div class="container mx-auto px-4">
             <div class="text-4xl font-bold">PROJECTS</div>
             <div class="text-lg">UniqueCode에서 진행하는 프로젝트들이에요!</div>
-            <div class="bg-black w-full h-1" />
+            <div class="bg-black w-full h-1 mb-2" />
+            <div class="grid grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+              <img
+                :src="require('../assets/images/strawberrydonut.png')"
+                alt="strawberryDonut"
+                class="rounded-lg"
+              />
+            </div>
           </div>
         </div>
         <div class="section">SECTION 3</div>
