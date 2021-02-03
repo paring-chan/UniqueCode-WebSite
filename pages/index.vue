@@ -21,6 +21,7 @@
             <div class="bg-black w-full h-1 mb-2" />
             <div class="grid grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
               <ProjectCard
+                :image="require('../assets/images/strawberrydonut.png')"
                 to="/projects/strawberry_donut"
                 title="딸기도넛"
                 description="대충 스토리 봇이에여"
