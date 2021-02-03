@@ -19,7 +19,7 @@
             <div class="text-4xl font-bold">PROJECTS</div>
             <div class="text-lg">UniqueCode에서 진행하는 프로젝트들이에요!</div>
             <div class="bg-black w-full h-1 mb-2" />
-            <div class="grid grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2">
+            <div class="grid grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-2">
               <ProjectCard
                 :image="require('../assets/images/strawberrydonut.png')"
                 to="/projects/strawberrydonut"
