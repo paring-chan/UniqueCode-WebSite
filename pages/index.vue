@@ -39,6 +39,12 @@
                 description="설명설명"
               />
               <ProjectCard
+                :image="require('../assets/images/uniquebots.png')"
+                to="/projects/uniquebots"
+                title="UniqueBots"
+                description="디스코드 봇 리스트에요!"
+              />
+              <ProjectCard
                 :image="require('../assets/images/freeai.png')"
                 to="/projects/freeai"
                 title="FreeAI"
