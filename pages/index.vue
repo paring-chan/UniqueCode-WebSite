@@ -24,13 +24,13 @@
                 :image="require('../assets/images/strawberrydonut.png')"
                 to="/projects/strawberrydonut"
                 title="딸기도넛"
-                description="대충 스토리 봇이에여"
+                description="나만의 스토리를 만들다"
               />
               <ProjectCard
                 :image="require('../assets/images/minibot.png')"
                 to="/projects/minibot"
                 title="미니봇"
-                description="설명설명"
+                description="망한잡봇"
               />
               <ProjectCard
                 :image="require('../assets/images/olivetoast.png')"
