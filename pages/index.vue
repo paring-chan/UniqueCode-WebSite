@@ -27,12 +27,6 @@
                 description="대충 스토리 봇이에여"
               />
               <ProjectCard
-                :image="require('../assets/images/freeai.png')"
-                to="/projects/freeai"
-                title="FreeAI"
-                description="설명설명"
-              />
-              <ProjectCard
                 :image="require('../assets/images/minibot.png')"
                 to="/projects/minibot"
                 title="미니봇"
@@ -42,6 +36,12 @@
                 :image="require('../assets/images/olivetoast.png')"
                 to="/projects/olivetoast"
                 title="올리브토스트"
+                description="설명설명"
+              />
+              <ProjectCard
+                :image="require('../assets/images/freeai.png')"
+                to="/projects/freeai"
+                title="FreeAI"
                 description="설명설명"
               />
             </div>
