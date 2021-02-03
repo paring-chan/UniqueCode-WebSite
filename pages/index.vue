@@ -22,29 +22,27 @@
             <div class="grid grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2">
               <ProjectCard
                 :image="require('../assets/images/strawberrydonut.png')"
-                to="/projects/strawberry_donut"
+                to="/projects/strawberrydonut"
                 title="딸기도넛"
                 description="대충 스토리 봇이에여"
-              /><ProjectCard
-                :image="require('../assets/images/strawberrydonut.png')"
-                to="/projects/strawberry_donut"
-                title="딸기도넛"
-                description="대충 스토리 봇이에여"
-              /><ProjectCard
-                :image="require('../assets/images/strawberrydonut.png')"
-                to="/projects/strawberry_donut"
-                title="딸기도넛"
-                description="대충 스토리 봇이에여"
-              /><ProjectCard
-                :image="require('../assets/images/strawberrydonut.png')"
-                to="/projects/strawberry_donut"
-                title="딸기도넛"
-                description="대충 스토리 봇이에여"
-              /><ProjectCard
-                :image="require('../assets/images/strawberrydonut.png')"
-                to="/projects/strawberry_donut"
-                title="딸기도넛"
-                description="대충 스토리 봇이에여"
+              />
+              <ProjectCard
+                :image="require('../assets/images/freeai.png')"
+                to="/projects/freeai"
+                title="FreeAI"
+                description="설명설명"
+              />
+              <ProjectCard
+                :image="require('../assets/images/minibot.png')"
+                to="/projects/minibot"
+                title="미니봇"
+                description="설명설명"
+              />
+              <ProjectCard
+                :image="require('../assets/images/olivetoast.png')"
+                to="/projects/olivetoast"
+                title="올리브토스트"
+                description="설명설명"
               />
             </div>
           </div>
