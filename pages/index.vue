@@ -53,7 +53,9 @@
             </div>
           </div>
         </div>
-        <div class="section">SECTION 3</div>
+        <div class="section fp-auto-height border-t p-4">
+          <div class="text-xl font-bold">UniqueCode</div>
+        </div>
       </full-page>
     </client-only>
   </div>
