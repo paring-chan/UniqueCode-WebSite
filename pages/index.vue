@@ -14,7 +14,7 @@
             </button>
           </div>
         </div>
-        <div class="section">
+        <div class="section pt-16">
           <div class="container mx-auto px-4">
             <div class="text-4xl font-bold">PROJECTS</div>
             <div class="text-lg">UniqueCode에서 진행하는 프로젝트들이에요!</div>
@@ -70,6 +70,7 @@ export default Vue.extend({
     options: {
       licenseKey: '7A6BD9E1-8D334350-80A4BC34-64E1097D',
       anchors: ['1', '2', '3'],
+      scrollOverflow: true,
     },
   }),
 })
