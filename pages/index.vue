@@ -14,7 +14,7 @@
             </button>
           </div>
         </div>
-        <div class="section pt-16">
+        <div class="section">
           <div class="container mx-auto px-4">
             <div class="text-4xl font-bold">PROJECTS</div>
             <div class="text-lg">UniqueCode에서 진행하는 프로젝트들이에요!</div>
@@ -65,6 +65,7 @@
 import Vue from 'vue'
 
 export default Vue.extend({
+  layout: 'main',
   data: () => ({
     options: {
       licenseKey: '7A6BD9E1-8D334350-80A4BC34-64E1097D',
