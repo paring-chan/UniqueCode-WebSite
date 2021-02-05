@@ -5,5 +5,9 @@
 </template>
 
 <script>
-export default {}
+export default {
+  head: {
+    title: '딸기도넛 | UniqueCode',
+  },
+}
 </script>
