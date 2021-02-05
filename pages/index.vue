@@ -1,15 +1,15 @@
 <template>
   <div>
-    <div ref="sec1" class="section">
+    <div class="section">
       <div class="container mx-auto px-4">
         <div class="text-3xl font-bold">UniqueCode</div>
-        <div class="text-2xl">세상을 바꾸는 청소년 팀.</div>
-        <button
+        <div class="text-2xl mb-2">세상을 바꾸는 청소년 팀.</div>
+        <a
           class="p-2 w-36 rounded-md bg-white hover:bg-black border hover:text-white text-black transition-colors border-black"
-          @click="$refs.page.api.moveSectionDown()"
+          href="#2"
         >
           더 알아보기
-        </button>
+        </a>
       </div>
     </div>
     <div class="section">
@@ -62,5 +62,10 @@ import Vue from 'vue'
 
 export default Vue.extend({
   layout: 'main',
+  props: {
+    page: {
+      type: Object,
+    },
+  },
 })
 </script>

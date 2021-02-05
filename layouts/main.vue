@@ -17,9 +17,7 @@
     </div>
     <client-only>
       <full-page ref="page" :options="options">
-        <div>
-          <Nuxt />
-        </div>
+        <Nuxt />
       </full-page>
     </client-only>
   </div>
