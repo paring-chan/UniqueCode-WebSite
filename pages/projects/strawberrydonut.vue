@@ -7,7 +7,7 @@
 <script>
 export default {
   head: {
-    title: '딸기도넛 | UniqueCode',
+    title: 'StrawberryDonut | UniqueCode',
   },
 }
 </script>
