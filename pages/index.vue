@@ -54,8 +54,18 @@
           </div>
         </div>
         <div class="section fp-auto-height border-t p-4">
-          <div class="text-xl font-bold">UniqueCode</div>
-          <div class="text-md">세상을 바꾸는 청소년 팀</div>
+          <div class="flex">
+            <div class="flex-grow"></div>
+            <div>
+              2020 &copy; UniqueCode | Developed by
+              <a
+                href="https://github.com/pikokr"
+                target="_blank"
+                class="text-blue-500"
+                >pikokr</a
+              >
+            </div>
+          </div>
         </div>
       </full-page>
     </client-only>
