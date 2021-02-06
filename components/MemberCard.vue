@@ -20,12 +20,26 @@
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }"
-        class="md:w-1/3 h-1/3 md:h-auto"
+        class="md:w-1/3 md:h-auto flex-grow"
       />
-      <div class="h-2/3 w-full md:h-auto md:w-2/3 p-6">
+      <div class="w-full md:h-auto md:w-2/3 p-6">
         <div class="text-4xl font-bold">{{ member.name }}</div>
-        <div>
-          <FontAwesomeIcon :icon="['fas', 'bars']" />
+        <div class="flex space-x-2">
+          <div>
+            <a :href="`https://discord.com/users/${member.id}`" target="_blank">
+              <FontAwesomeIcon :icon="['fab', 'discord']" class="text-xl" />
+            </a>
+          </div>
+          <div v-if="member.links" class="flex space-x-2">
+            <a
+              v-for="[r, i] in member.links.map((x, y) => [x, y])"
+              :key="i"
+              :href="r.link"
+              target="_blank"
+            >
+              <FontAwesomeIcon :icon="r.icon" class="text-xl" />
+            </a>
+          </div>
         </div>
         <div class="text-2xl">{{ member.description }}</div>
       </div>

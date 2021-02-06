@@ -25,6 +25,8 @@ export default {
           'https://cdn.discordapp.com/avatars/299895531701010442/352a021b71062329b93f919d9c5bca35.png?size=1024',
         id: '299895531701010442',
         name: 'STORM',
+        description: '설명설명',
+        links: [],
       },
       {
         id: '628595345798201355',
@@ -32,7 +34,12 @@ export default {
         avatar:
           'https://cdn.discordapp.com/avatars/628595345798201355/de2e052c9b74610a18bdf727aba55806.png?size=1024',
         description: '이 웹사이트를 만든 파랑이에요!',
-        links: [{}],
+        links: [
+          {
+            icon: ['fas', 'envelope'],
+            link: 'mailto:pikokr@piko.app',
+          },
+        ],
       },
     ],
   }),
