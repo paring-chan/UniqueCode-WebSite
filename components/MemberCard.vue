@@ -9,12 +9,20 @@
     </div>
     <div
       :class="{
-        'z-50 fixed bg-black w-full h-full overlay': true,
+        'z-50 fixed bg-white w-full h-full overlay flex md:flex-row flex-col-reverse': true,
         active: open,
       }"
       @click="open = false"
     >
-      test
+      <div
+        :style="{
+          backgroundImage: `url(${member.avatar})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }"
+        class="md:w-1/3 h-1/3 md:h-auto"
+      />
+      <div class="h-2/3 w-full md:h-auto md:w-2/3">asdf</div>
     </div>
   </div>
 </template>
@@ -36,15 +44,17 @@ export default {
 
 <style scoped>
 .active {
-  top: 0 !important;
-  opacity: 1 !important;
+  left: 0 !important;
   pointer-events: unset !important;
+  visibility: visible !important;
 }
 .overlay {
-  left: 0;
-  top: 100vh;
-  opacity: 0;
+  left: -100vw;
+  top: 0;
   pointer-events: none;
-  transition: all 0.25s ease-in-out;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.25s;
+  visibility: hidden;
+  transition-property: left, visibility;
 }
 </style>
