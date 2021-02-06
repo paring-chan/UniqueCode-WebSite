@@ -24,6 +24,10 @@
       />
       <div class="h-2/3 w-full md:h-auto md:w-2/3 p-6">
         <div class="text-4xl font-bold">{{ member.name }}</div>
+        <div>
+          <FontAwesomeIcon :icon="['fas', 'bars']" />
+        </div>
+        <div class="text-2xl">{{ member.description }}</div>
       </div>
     </div>
   </div>

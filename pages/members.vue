@@ -31,6 +31,8 @@ export default {
         name: '파랑이',
         avatar:
           'https://cdn.discordapp.com/avatars/628595345798201355/de2e052c9b74610a18bdf727aba55806.png?size=1024',
+        description: '이 웹사이트를 만든 파랑이에요!',
+        links: [{}],
       },
     ],
   }),
