@@ -22,7 +22,9 @@
         }"
         class="md:w-1/3 h-1/3 md:h-auto"
       />
-      <div class="h-2/3 w-full md:h-auto md:w-2/3">asdf</div>
+      <div class="h-2/3 w-full md:h-auto md:w-2/3 p-6">
+        <div class="text-2xl font-bold">{{ member.name }}</div>
+      </div>
     </div>
   </div>
 </template>
