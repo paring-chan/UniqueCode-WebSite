@@ -4,7 +4,6 @@
     <div>
       <Nuxt />
     </div>
-    <custom-cursor />
   </div>
 </template>
 
