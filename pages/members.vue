@@ -1,6 +1,9 @@
 <template>
   <div>
-    <content-spacer> 멤버목록 </content-spacer>
+    <content-spacer>
+      <div class="text-2xl font-bold">MEMBERS</div>
+      <div class="text-gray-600">UniqueCode 멤버들이에요!</div>
+    </content-spacer>
   </div>
 </template>
 
