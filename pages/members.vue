@@ -4,7 +4,7 @@
       <div class="text-2xl font-bold">MEMBERS</div>
       <div class="text-gray-600">UniqueCode 멤버들이에요!</div>
       <div
-        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5"
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-2"
       >
         <MemberCard
           v-for="member in members"
