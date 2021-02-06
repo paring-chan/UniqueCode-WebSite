@@ -21,6 +21,12 @@ export default {
   data: () => ({
     members: [
       {
+        avatar:
+          'https://cdn.discordapp.com/avatars/299895531701010442/352a021b71062329b93f919d9c5bca35.png?size=1024',
+        id: '299895531701010442',
+        name: 'STORM',
+      },
+      {
         id: '628595345798201355',
         name: '파랑이',
         avatar:
