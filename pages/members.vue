@@ -3,12 +3,30 @@
     <content-spacer>
       <div class="text-2xl font-bold">MEMBERS</div>
       <div class="text-gray-600">UniqueCode 멤버들이에요!</div>
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5"
+      >
+        <MemberCard
+          v-for="member in members"
+          :key="member.id"
+          :member="member"
+        />
+      </div>
     </content-spacer>
   </div>
 </template>
 
 <script>
-import Vue from 'vue'
-
-export default Vue.extend({})
+export default {
+  data: () => ({
+    members: [
+      {
+        id: '628595345798201355',
+        name: '파랑이',
+        avatar:
+          'https://cdn.discordapp.com/avatars/628595345798201355/de2e052c9b74610a18bdf727aba55806.png?size=1024',
+      },
+    ],
+  }),
+}
 </script>
