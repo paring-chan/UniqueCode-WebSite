@@ -1,9 +1,20 @@
 <template>
   <div>
-    <div class="shadow-lg" @click="open = true">
+    <div class="shadow-lg relative">
+      <div
+        class="hover-container rounded-lg cursor-pointer transition-opacity"
+        @click="open = true"
+      >
+        <div
+          class="w-full h-full opacity-0 hover:opacity-100 transition-opacity text-white flex flex-col"
+          style="justify-content: center; align-items: center"
+        >
+          <div class="text-lg">{{ member.name }}</div>
+        </div>
+      </div>
       <img
         :src="member.avatar"
-        class="rounded-lg pointer-events-none"
+        class="rounded-lg pointer-events-none left-0 top-0"
         alt="Avatar"
       />
     </div>
@@ -76,5 +87,17 @@ export default {
   transition-duration: 0.25s;
   visibility: hidden;
   transition-property: left, visibility;
+}
+
+.hover-container {
+  width: 100%;
+  height: 100%;
+  z-index: 30;
+  position: absolute;
+  background: #0000;
+  transition: background-color 0.1s ease-in-out;
+}
+.hover-container:hover {
+  background: #0009;
 }
 </style>
