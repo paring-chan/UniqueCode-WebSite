@@ -9,7 +9,7 @@
           class="w-full h-full opacity-0 hover:opacity-100 transition-opacity text-white flex flex-col"
           style="justify-content: center; align-items: center"
         >
-          <div class="text-lg">{{ member.name }}</div>
+          <div class="text-lg font-bold">{{ member.name }}</div>
         </div>
       </div>
       <img
