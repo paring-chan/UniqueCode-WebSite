@@ -29,7 +29,7 @@
     "@nuxt/typescript-runtime": "^2.0.1",
     "@nuxtjs/tailwindcss": "^3.4.2",
     "@nuxtjs/vercel-builder": "^0.19.0",
-    "@tailwindcss/postcss7-compat": "^2.0.2",
+    "@tailwindcss/postcss7-compat": "^2.0.3",
     "add": "^2.0.6",
     "autoprefixer": "^9",
     "core-js": "^3.8.3",
