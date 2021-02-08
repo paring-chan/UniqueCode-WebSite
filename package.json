@@ -35,7 +35,7 @@
     "core-js": "^3.8.3",
     "gsap": "^3.6.0",
     "nuxt": "^2.14.12",
-    "postcss": "^8",
+    "postcss": "7",
     "postcss-cli": "8",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat",
     "vue": "^2.6.12",
