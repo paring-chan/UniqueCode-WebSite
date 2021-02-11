@@ -10,6 +10,7 @@ jobs:
           node-version: v15.8.0
       - run: yarn
       - run: yarn build && yarn next export
+      - run: touch .nojekyll
       - uses: JamesIves/github-pages-deploy-action@4.0.0
         name: Deploy to github pages
         with:
