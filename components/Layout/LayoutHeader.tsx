@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Link from 'next/link'
+import styles from '../../styles/layout.module.css'
 
 class LayoutHeader extends Component<
   never,
@@ -34,9 +35,9 @@ class LayoutHeader extends Component<
   render() {
     return (
       <div
-        className={`bg-white h-16 fixed border-b w-full left-0 top-0 transition-all ${
-          this.state.navBorder ? 'border-gray-300' : 'border-transparent'
-        }`}>
+        className={`bg-white h-16 fixed border-b bg-opacity-70 w-full left-0 top-0 transition-all ${
+          styles.header__bg
+        } ${this.state.navBorder ? 'border-gray-300' : 'border-transparent'}`}>
         <div
           className="flex px-4 container mx-auto h-full"
           style={{ alignItems: 'center' }}>
