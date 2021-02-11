@@ -1,0 +1,18 @@
+on: [push]
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        name: Setup node
+        with:
+          node-version: v15.8.0
+      - run: yarn
+      - run: yarn build && yarn next export
+      - uses: JamesIves/github-pages-deploy-action@4.0.0
+        name: Deploy to github pages
+        with:
+          branch: gh-pages
+          folder: out
+name: Deploy
