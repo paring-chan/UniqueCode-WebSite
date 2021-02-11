@@ -1,6 +1,35 @@
 import React, { Component } from 'react'
 
-class LayoutHeader extends Component<any, any> {
+class LayoutHeader extends Component<
+  never,
+  {
+    navBorder: boolean
+  }
+> {
+  handleScroll = () => {
+    if (window.pageYOffset > 0) {
+      if (!this.state.navBorder) {
+        this.setState({ navBorder: true })
+      }
+    } else {
+      if (this.state.navBorder) {
+        this.setState({ navBorder: false })
+      }
+    }
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll)
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll)
+  }
+
+  state = {
+    navBorder: false,
+  }
+
   render() {
     return (
       <div className="bg-white h-16 border-b">
