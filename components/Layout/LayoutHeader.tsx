@@ -3,7 +3,7 @@ import Link from 'next/link'
 import styles from '../../styles/layout.module.css'
 
 class LayoutHeader extends Component<
-  never,
+  any,
   {
     navBorder: boolean
   }
