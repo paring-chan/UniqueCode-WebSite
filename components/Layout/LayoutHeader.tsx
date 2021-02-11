@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Link from 'next/link'
 
 class LayoutHeader extends Component<
   never,
@@ -39,7 +40,11 @@ class LayoutHeader extends Component<
         <div
           className="flex px-4 container mx-auto h-full"
           style={{ alignItems: 'center' }}>
-          <div className="text-xl font-bold">UniqueCode</div>
+          <Link href="/">
+            <a href="/" className="text-xl font-bold">
+              UniqueCode
+            </a>
+          </Link>
           <div className="flex-grow" />
           <div>메뉴</div>
         </div>
