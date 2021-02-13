@@ -1,5 +1,20 @@
 import React from 'react'
 import Link from 'next/link'
+import { ExpandMore } from '@material-ui/icons'
+import { makeStyles } from '@material-ui/core'
+import clsx from 'clsx'
+
+const useStyles = makeStyles((theme) => ({
+  expand: {
+    transform: 'rotate(0deg)',
+    transition: theme.transitions.create('transform', {
+      duration: theme.transitions.duration.short,
+    }),
+  },
+  expandOpen: {
+    transform: 'rotate(90deg)',
+  },
+}))
 
 const MenuItem: React.FC<{
   items: {
@@ -10,14 +25,24 @@ const MenuItem: React.FC<{
   label: string
   link?: string
 }> = ({ items, label, link }) => {
+  const [open, setOpen] = React.useState(false)
+  const classes = useStyles()
+
   return (
     <div>
-      <div>
+      <div onClick={() => setOpen(!open)} className="cursor-pointer">
         {link?.startsWith('/') ? (
           <Link href={link}>{label}</Link>
         ) : (
           <a href={link}>{label}</a>
         )}
+        <ExpandMore
+          className={clsx({
+            [classes.expand]: true,
+            [classes.expandOpen]: open,
+          })}
+          fontSize="large"
+        />
       </div>
     </div>
   )
