@@ -30,7 +30,9 @@ const MenuItem: React.FC<{
 
   return (
     <div>
-      <div onClick={() => setOpen(!open)} className="cursor-pointer">
+      <div
+        onClick={() => setOpen(!open)}
+        className="cursor-pointer text-3xl font-bold">
         {link?.startsWith('/') ? (
           <Link href={link}>{label}</Link>
         ) : (

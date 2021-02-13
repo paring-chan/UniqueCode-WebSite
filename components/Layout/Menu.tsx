@@ -4,7 +4,7 @@ import MenuItem from './MenuItem'
 class Menu extends Component<any, any> {
   render() {
     return (
-      <div className="bg-black h-full fixed w-full z-50 text-white flex flex-col text-3xl font-bold">
+      <div className="bg-black h-full fixed w-full z-50 text-white flex flex-col">
         <div className="w-full h-20" />
         <div
           style={{
