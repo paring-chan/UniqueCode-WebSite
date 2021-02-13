@@ -7,8 +7,9 @@ class Menu extends Component<any, any> {
     return (
       <div
         className={clsx({
-          'bg-black h-full fixed w-full transition-all z-50 text-white flex flex-col': true,
-          'opacity-0 user-select-none': !this.props.open,
+          'bg-black h-full fixed w-full z-50 transition-all text-white flex flex-col': true,
+          'opacity-0 invisible pointer-events-none': !this.props.open,
+          'opacity-100 visible': this.props.open,
         })}>
         <div className="w-full h-20" />
         <div

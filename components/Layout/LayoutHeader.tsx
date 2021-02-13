@@ -32,7 +32,7 @@ class LayoutHeader extends Component<
 
   state = {
     navBorder: false,
-    menu: true,
+    menu: false,
   }
 
   render() {
@@ -40,8 +40,8 @@ class LayoutHeader extends Component<
       <>
         <div
           className={`bg-white h-16 fixed border-b ${
-            this.state.menu ? 'bg-opacity-100' : 'bg-opacity-90'
-          } w-full left-0 top-0 transition-all ${styles.header__bg} ${
+            this.state.menu ? 'bg-opacity-100' : 'bg-opacity-70 delay-200'
+          } w-full left-0 top-0 ${styles.header__bg} ${
             this.state.navBorder ? 'border-gray-300' : 'border-transparent'
           }`}
           style={{
