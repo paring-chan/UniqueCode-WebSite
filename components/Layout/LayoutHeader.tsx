@@ -39,11 +39,12 @@ class LayoutHeader extends Component<
     return (
       <>
         <div
-          className={`bg-white h-16 fixed border-b bg-opacity-70 z-50 w-full left-0 top-0 transition-all ${
+          className={`bg-white h-16 fixed border-b bg-opacity-70 w-full left-0 top-0 transition-all ${
             styles.header__bg
-          } ${
-            this.state.navBorder ? 'border-gray-300' : 'border-transparent'
-          }`}>
+          } ${this.state.navBorder ? 'border-gray-300' : 'border-transparent'}`}
+          style={{
+            zIndex: 99999,
+          }}>
           <div
             className="flex px-4 container mx-auto h-full"
             style={{ alignItems: 'center' }}>
