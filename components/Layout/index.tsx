@@ -8,8 +8,14 @@ const Layout: React.FC<{
   return (
     <div>
       {!noHeader && <LayoutHeader />}
-      {!noSpacing && <div className="w-full h-16" />}
-      {children}
+      {!noSpacing ? (
+        <>
+          <div className="w-full h-16" />
+          <div className="container px-4 mx-auto">{children}</div>
+        </>
+      ) : (
+        children
+      )}
     </div>
   )
 }
