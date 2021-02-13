@@ -46,7 +46,13 @@ const MenuItem: React.FC<{
           fontSize="large"
         />
       </div>
-      <Collapse in={open}>OPEN</Collapse>
+      <Collapse in={open}>
+        {items.map((r, i) => (
+          <div key={i} className="text-xl">
+            {r.label}
+          </div>
+        ))}
+      </Collapse>
     </div>
   )
 }
