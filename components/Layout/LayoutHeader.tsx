@@ -2,14 +2,13 @@ import React, { Component } from 'react'
 import Link from 'next/link'
 import styles from '../../styles/layout.module.css'
 import Menu from './Menu'
+import { Menu as MenuIcon, Close as CloseIcon } from '@material-ui/icons'
 
 class LayoutHeader extends Component<
   {
     fullpage?: boolean
   },
-  {
-    navBorder: boolean
-  }
+  any
 > {
   handleScroll = () => {
     if (window.pageYOffset > 0) {
@@ -33,15 +32,18 @@ class LayoutHeader extends Component<
 
   state = {
     navBorder: false,
+    menu: true,
   }
 
   render() {
     return (
       <>
         <div
-          className={`bg-white h-16 fixed border-b bg-opacity-70 w-full left-0 top-0 transition-all ${
-            styles.header__bg
-          } ${this.state.navBorder ? 'border-gray-300' : 'border-transparent'}`}
+          className={`bg-white h-16 fixed border-b ${
+            this.state.menu ? 'bg-opacity-100' : 'bg-opacity-90'
+          } w-full left-0 top-0 transition-all ${styles.header__bg} ${
+            this.state.navBorder ? 'border-gray-300' : 'border-transparent'
+          }`}
           style={{
             zIndex: 99999,
           }}>
@@ -64,10 +66,18 @@ class LayoutHeader extends Component<
               </Link>
             )}
             <div className="flex-grow" />
-            <div>메뉴</div>
+            <div>
+              <div onClick={() => this.setState({ menu: !this.state.menu })}>
+                {this.state.menu ? (
+                  <CloseIcon fontSize="large" />
+                ) : (
+                  <MenuIcon fontSize="large" />
+                )}
+              </div>
+            </div>
           </div>
         </div>
-        <Menu />
+        <Menu open={this.state.menu} />
       </>
     )
   }
