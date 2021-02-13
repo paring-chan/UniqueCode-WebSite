@@ -1,18 +1,18 @@
 import React from 'react'
 import Link from 'next/link'
 import { ExpandMore } from '@material-ui/icons'
-import { makeStyles } from '@material-ui/core'
+import { Collapse, makeStyles } from '@material-ui/core'
 import clsx from 'clsx'
 
 const useStyles = makeStyles((theme) => ({
   expand: {
-    transform: 'rotate(0deg)',
+    transform: 'rotate(-90deg)',
     transition: theme.transitions.create('transform', {
       duration: theme.transitions.duration.short,
     }),
   },
   expandOpen: {
-    transform: 'rotate(90deg)',
+    transform: 'rotate(0deg)',
   },
 }))
 
@@ -44,6 +44,7 @@ const MenuItem: React.FC<{
           fontSize="large"
         />
       </div>
+      <Collapse in={open}>OPEN</Collapse>
     </div>
   )
 }
