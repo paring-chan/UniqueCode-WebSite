@@ -2,12 +2,13 @@ import React from 'react'
 import LayoutHeader from './LayoutHeader'
 
 const Layout: React.FC<{
-  spacing?: boolean
-}> = ({ children, spacing }) => {
+  noSpacing?: boolean
+  noHeader?: boolean
+}> = ({ children, noSpacing, noHeader }) => {
   return (
     <div>
-      <LayoutHeader />
-      {spacing && <div className="w-full h-16" />}
+      {!noHeader && <LayoutHeader />}
+      {!noSpacing && <div className="w-full h-16" />}
       {children}
     </div>
   )
