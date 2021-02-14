@@ -1,13 +1,13 @@
 .container {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   position: relative;
   transition: .3s;
   display: inline-block;
 }
 
 .icon {
-  top: 20.5px;
+  top: 15.5px;
   &, &::before, &::after {
     width: 40px;
     height: 7px;
@@ -20,5 +20,8 @@
   }
   &::after {
     top: 14.5px;
+  }
+  &.active {
+
   }
 }

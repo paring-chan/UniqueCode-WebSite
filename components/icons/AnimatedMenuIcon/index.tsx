@@ -1,10 +1,15 @@
 import React from 'react'
 import styles from './AnimatedMenuIcon.module.scss'
+import clsx from 'clsx'
 
-const AnimatedMenuIcon = ({ active: boolean }) => {
+const AnimatedMenuIcon = ({ active }: { active: boolean }) => {
   return (
     <div className={styles.container}>
-      <div className={styles.icon} />
+      <div
+        className={clsx(styles.icon, {
+          [styles.active]: active,
+        })}
+      />
     </div>
   )
 }
