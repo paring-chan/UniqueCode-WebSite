@@ -4,12 +4,11 @@ import clsx from 'clsx'
 
 const AnimatedMenuIcon = ({ active }: { active: boolean }) => {
   return (
-    <div className={styles.container}>
-      <div
-        className={clsx(styles.icon, {
-          [styles.active]: active,
-        })}
-      />
+    <div
+      className={clsx(styles.icon, {
+        [styles.active]: active,
+      })}>
+      <div className={styles.ani} />
     </div>
   )
 }
