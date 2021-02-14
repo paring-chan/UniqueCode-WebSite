@@ -29,8 +29,8 @@ const MenuItem: React.FC<{
   const classes = useStyles()
 
   return (
-    <div>
-      <div className="flex justify-center md:justify-start">
+    <div className="inline-block">
+      <div className="flex">
         <div
           onClick={() => setOpen(!open)}
           className="cursor-pointer text-3xl font-bold">
@@ -49,7 +49,7 @@ const MenuItem: React.FC<{
         </div>
       </div>
       <Collapse in={open}>
-        <div className="flex flex-col md:text-left text-center">
+        <div className="flex flex-col">
           {items.map((r, i) =>
             <div key={i}>
               {
