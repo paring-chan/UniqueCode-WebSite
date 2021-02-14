@@ -52,6 +52,7 @@ class LayoutHeader extends Component<
             style={{ alignItems: 'center' }}>
             {this.props.fullpage ? (
               <a
+                onClick={() => this.setState({menu: false})}
                 href={this.props.fullpage ? '/#sec1' : '/'}
                 className="text-xl font-bold">
                 UniqueCode
@@ -59,6 +60,7 @@ class LayoutHeader extends Component<
             ) : (
               <Link href="/">
                 <a
+                  onClick={() => this.setState({menu: false})}
                   href={this.props.fullpage ? '/#sec1' : '/'}
                   className="text-xl font-bold">
                   UniqueCode

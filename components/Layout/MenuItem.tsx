@@ -51,23 +51,25 @@ const MenuItem: React.FC<{
       <Collapse in={open}>
         <div className="flex flex-col md:text-left text-center">
           {items.map((r, i) =>
-            r.nextLink ? (
-              <Link href={r.link}>
-                <a
-                  key={i}
-                  className="text-2xl font-bold opacity-50 hover:opacity-100 transition-all duration-500">
-                  {r.label}
-                </a>
-              </Link>
-            ) : (
-              <a
-                key={i}
-                href={r.link}
-                target="_blank"
-                className="text-2xl font-bold opacity-50 hover:opacity-100 transition-all duration-500">
-                {r.label}
-              </a>
-            ),
+            <div key={i}>
+              {
+                r.nextLink ? (
+                  <Link href={r.link}>
+                    <a
+                      className="text-2xl font-bold opacity-50 hover:opacity-100 transition-all duration-500">
+                      {r.label}
+                    </a>
+                  </Link>
+                ) : (
+                  <a
+                    href={r.link}
+                    target="_blank"
+                    className="text-2xl font-bold opacity-50 hover:opacity-100 transition-all duration-500">
+                    {r.label}
+                  </a>
+                )
+              }
+            </div>,
           )}
         </div>
       </Collapse>
