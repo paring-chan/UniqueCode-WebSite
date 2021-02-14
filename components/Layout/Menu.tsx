@@ -16,7 +16,82 @@ class Menu extends Component<any, any> {
           style={{
             alignItems: 'center',
           }}
-          className="h-full px-8 flex">
+          className="h-full px-8 flex gap-12">
+          <MenuItem
+            items={[
+              {
+                label: 'FreeAI',
+                link: '/projects/freeai',
+                nextLink: true,
+              },
+              {
+                label: 'StrawberryDonut',
+                link: '/projects/strawberrydonut',
+                nextLink: true,
+              },
+              {
+                label: 'OliveToast',
+                link: '/projects/olivetoast',
+                nextLink: true,
+              },
+              {
+                label: 'MiniBOT',
+                link: '/projects/minibot',
+                nextLink: true,
+              },
+            ]}
+            label="Projects"
+          />
+          <MenuItem
+            items={[
+              {
+                label: 'FreeAI',
+                link: '/projects/freeai',
+                nextLink: true,
+              },
+              {
+                label: 'StrawberryDonut',
+                link: '/projects/strawberrydonut',
+                nextLink: true,
+              },
+              {
+                label: 'OliveToast',
+                link: '/projects/olivetoast',
+                nextLink: true,
+              },
+              {
+                label: 'MiniBOT',
+                link: '/projects/minibot',
+                nextLink: true,
+              },
+            ]}
+            label="Projects"
+          />
+          <MenuItem
+            items={[
+              {
+                label: 'FreeAI',
+                link: '/projects/freeai',
+                nextLink: true,
+              },
+              {
+                label: 'StrawberryDonut',
+                link: '/projects/strawberrydonut',
+                nextLink: true,
+              },
+              {
+                label: 'OliveToast',
+                link: '/projects/olivetoast',
+                nextLink: true,
+              },
+              {
+                label: 'MiniBOT',
+                link: '/projects/minibot',
+                nextLink: true,
+              },
+            ]}
+            label="Projects"
+          />
           <MenuItem
             items={[
               {
