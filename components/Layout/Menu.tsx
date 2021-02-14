@@ -18,7 +18,7 @@ class Menu extends Component<any, any> {
             overflow: 'auto',
           }}
           className="h-full p-8 flex justify-center md:justify-start">
-          <div className="gap-12 flex flex-col md:flex-row">
+          <div className="gap-12 flex p-4">
             <MenuItem
               items={[
                 {

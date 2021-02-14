@@ -30,7 +30,7 @@ const MenuItem: React.FC<{
 
   return (
     <div>
-      <div className="flex">
+      <div className="flex justify-center md:justify-start">
         <div
           onClick={() => setOpen(!open)}
           className="cursor-pointer text-3xl font-bold">
@@ -49,7 +49,7 @@ const MenuItem: React.FC<{
         </div>
       </div>
       <Collapse in={open}>
-        <div className="flex flex-col">
+        <div className="flex flex-col md:text-left text-center">
           {items.map((r, i) =>
             r.nextLink ? (
               <Link href={r.link}>
