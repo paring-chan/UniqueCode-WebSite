@@ -15,108 +15,111 @@ class Menu extends Component<any, any> {
         <div
           style={{
             alignItems: 'center',
+            overflow: 'auto',
           }}
-          className="h-full px-8 flex gap-12">
-          <MenuItem
-            items={[
-              {
-                label: 'FreeAI',
-                link: '/projects/freeai',
-                nextLink: true,
-              },
-              {
-                label: 'StrawberryDonut',
-                link: '/projects/strawberrydonut',
-                nextLink: true,
-              },
-              {
-                label: 'OliveToast',
-                link: '/projects/olivetoast',
-                nextLink: true,
-              },
-              {
-                label: 'MiniBOT',
-                link: '/projects/minibot',
-                nextLink: true,
-              },
-            ]}
-            label="Projects"
-          />
-          <MenuItem
-            items={[
-              {
-                label: 'FreeAI',
-                link: '/projects/freeai',
-                nextLink: true,
-              },
-              {
-                label: 'StrawberryDonut',
-                link: '/projects/strawberrydonut',
-                nextLink: true,
-              },
-              {
-                label: 'OliveToast',
-                link: '/projects/olivetoast',
-                nextLink: true,
-              },
-              {
-                label: 'MiniBOT',
-                link: '/projects/minibot',
-                nextLink: true,
-              },
-            ]}
-            label="Projects"
-          />
-          <MenuItem
-            items={[
-              {
-                label: 'FreeAI',
-                link: '/projects/freeai',
-                nextLink: true,
-              },
-              {
-                label: 'StrawberryDonut',
-                link: '/projects/strawberrydonut',
-                nextLink: true,
-              },
-              {
-                label: 'OliveToast',
-                link: '/projects/olivetoast',
-                nextLink: true,
-              },
-              {
-                label: 'MiniBOT',
-                link: '/projects/minibot',
-                nextLink: true,
-              },
-            ]}
-            label="Projects"
-          />
-          <MenuItem
-            items={[
-              {
-                label: 'FreeAI',
-                link: '/projects/freeai',
-                nextLink: true,
-              },
-              {
-                label: 'StrawberryDonut',
-                link: '/projects/strawberrydonut',
-                nextLink: true,
-              },
-              {
-                label: 'OliveToast',
-                link: '/projects/olivetoast',
-                nextLink: true,
-              },
-              {
-                label: 'MiniBOT',
-                link: '/projects/minibot',
-                nextLink: true,
-              },
-            ]}
-            label="Projects"
-          />
+          className="h-full p-8 flex justify-center md:justify-start">
+          <div className="gap-12 flex flex-col md:flex-row">
+            <MenuItem
+              items={[
+                {
+                  label: 'FreeAI',
+                  link: '/projects/freeai',
+                  nextLink: true,
+                },
+                {
+                  label: 'StrawberryDonut',
+                  link: '/projects/strawberrydonut',
+                  nextLink: true,
+                },
+                {
+                  label: 'OliveToast',
+                  link: '/projects/olivetoast',
+                  nextLink: true,
+                },
+                {
+                  label: 'MiniBOT',
+                  link: '/projects/minibot',
+                  nextLink: true,
+                },
+              ]}
+              label="Projects"
+            />
+            <MenuItem
+              items={[
+                {
+                  label: 'FreeAI',
+                  link: '/projects/freeai',
+                  nextLink: true,
+                },
+                {
+                  label: 'StrawberryDonut',
+                  link: '/projects/strawberrydonut',
+                  nextLink: true,
+                },
+                {
+                  label: 'OliveToast',
+                  link: '/projects/olivetoast',
+                  nextLink: true,
+                },
+                {
+                  label: 'MiniBOT',
+                  link: '/projects/minibot',
+                  nextLink: true,
+                },
+              ]}
+              label="Projects"
+            />
+            <MenuItem
+              items={[
+                {
+                  label: 'FreeAI',
+                  link: '/projects/freeai',
+                  nextLink: true,
+                },
+                {
+                  label: 'StrawberryDonut',
+                  link: '/projects/strawberrydonut',
+                  nextLink: true,
+                },
+                {
+                  label: 'OliveToast',
+                  link: '/projects/olivetoast',
+                  nextLink: true,
+                },
+                {
+                  label: 'MiniBOT',
+                  link: '/projects/minibot',
+                  nextLink: true,
+                },
+              ]}
+              label="Projects"
+            />
+            <MenuItem
+              items={[
+                {
+                  label: 'FreeAI',
+                  link: '/projects/freeai',
+                  nextLink: true,
+                },
+                {
+                  label: 'StrawberryDonut',
+                  link: '/projects/strawberrydonut',
+                  nextLink: true,
+                },
+                {
+                  label: 'OliveToast',
+                  link: '/projects/olivetoast',
+                  nextLink: true,
+                },
+                {
+                  label: 'MiniBOT',
+                  link: '/projects/minibot',
+                  nextLink: true,
+                },
+              ]}
+              label="Projects"
+            />
+          </div>
         </div>
       </div>
     )

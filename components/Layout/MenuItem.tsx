@@ -30,21 +30,23 @@ const MenuItem: React.FC<{
 
   return (
     <div>
-      <div
-        onClick={() => setOpen(!open)}
-        className="cursor-pointer text-3xl font-bold">
-        {link?.startsWith('/') ? (
-          <Link href={link}>{label}</Link>
-        ) : (
-          <a href={link}>{label}</a>
-        )}
-        <ExpandMore
-          className={clsx({
-            [classes.expand]: true,
-            [classes.expandOpen]: open,
-          })}
-          fontSize="large"
-        />
+      <div className="flex">
+        <div
+          onClick={() => setOpen(!open)}
+          className="cursor-pointer text-3xl font-bold">
+          {link?.startsWith('/') ? (
+            <Link href={link}>{label}</Link>
+          ) : (
+            <a href={link}>{label}</a>
+          )}
+          <ExpandMore
+            className={clsx({
+              [classes.expand]: true,
+              [classes.expandOpen]: open,
+            })}
+            fontSize="large"
+          />
+        </div>
       </div>
       <Collapse in={open}>
         <div className="flex flex-col">
