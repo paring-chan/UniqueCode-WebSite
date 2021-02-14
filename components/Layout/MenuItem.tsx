@@ -48,7 +48,9 @@ const MenuItem: React.FC<{
       </div>
       <Collapse in={open}>
         {items.map((r, i) => (
-          <div key={i} className="text-xl">
+          <div
+            key={i}
+            className="text-2xl font-bold opacity-50 hover:opacity-100 transition-all duration-500">
             {r.label}
           </div>
         ))}
