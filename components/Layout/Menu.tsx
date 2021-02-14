@@ -20,7 +20,7 @@ class Menu extends Component<any, any> {
           <div className="p-12 h-full flex gap-12 w-full" style={{
             overflow: 'auto',
             alignItems: 'center',
-            justifyContent: 'center'
+            // justifyContent: 'center'
           }}>
             <MenuItem
               items={[
