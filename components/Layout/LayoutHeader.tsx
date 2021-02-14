@@ -3,6 +3,7 @@ import Link from 'next/link'
 import styles from '../../styles/layout.module.css'
 import Menu from './Menu'
 import { Menu as MenuIcon, Close as CloseIcon } from '@material-ui/icons'
+import AnimatedMenuIcon from '../icons/AnimatedMenuIcon'
 
 class LayoutHeader extends Component<
   {
@@ -70,11 +71,12 @@ class LayoutHeader extends Component<
             <div className="flex-grow" />
             <div>
               <div onClick={() => this.setState({ menu: !this.state.menu })}>
-                {this.state.menu ? (
-                  <CloseIcon fontSize="large" />
-                ) : (
-                  <MenuIcon fontSize="large" />
-                )}
+                {/*{this.state.menu ? (*/}
+                {/*  <CloseIcon fontSize="large" />*/}
+                {/*) : (*/}
+                {/*  <MenuIcon fontSize="large" />*/}
+                {/*)}*/}
+                <AnimatedMenuIcon active={this.state.menu}/>
               </div>
             </div>
           </div>
