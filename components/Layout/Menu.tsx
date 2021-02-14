@@ -17,8 +17,9 @@ class Menu extends Component<any, any> {
             alignItems: 'center',
           }}
           className="h-full flex justify-center md:justify-start">
-          <div className="p-12 h-full flex" style={{
+          <div className="p-12 h-full flex gap-12" style={{
             overflow: 'auto',
+            alignItems: 'center'
           }}>
             <MenuItem
               items={[
