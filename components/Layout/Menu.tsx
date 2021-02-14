@@ -24,6 +24,21 @@ class Menu extends Component<any, any> {
                 link: '/projects/freeai',
                 nextLink: true,
               },
+              {
+                label: 'StrawberryDonut',
+                link: '/projects/strawberrydonut',
+                nextLink: true,
+              },
+              {
+                label: 'OliveToast',
+                link: '/projects/olivetoast',
+                nextLink: true,
+              },
+              {
+                label: 'MiniBOT',
+                link: '/projects/minibot',
+                nextLink: true,
+              },
             ]}
             label="Projects"
           />
