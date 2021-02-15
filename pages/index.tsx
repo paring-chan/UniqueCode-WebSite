@@ -22,7 +22,7 @@ const Home: React.FC = () => {
                   }}>
                   <div className="text-4xl font-bold">UniqueCode</div>
                   <div className="text-xl">세상을 바꾸는 청소년 팀</div>
-                  <a className="py-2 px-4 border border-black cursor-pointer">
+                  <a className="py-2 px-4 border border-black cursor-pointer transition-colors hover:bg-black hover:text-white">
                     더보기
                   </a>
                 </div>
