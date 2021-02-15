@@ -20,7 +20,7 @@ const Home: React.FC = () => {
                     justifyContent: 'center',
                     alignItems: 'center',
                   }}>
-                  UniqueCode
+                  <div className="text-4xl font-bold">UniqueCode</div>
                 </div>
               </div>
               <div className="section">SECTION</div>
