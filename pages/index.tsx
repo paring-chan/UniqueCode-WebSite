@@ -13,7 +13,16 @@ const Home: React.FC = () => {
         render={({ fullpageApi }) => {
           return (
             <div>
-              <div className="section">SECTION</div>
+              <div className="section">
+                <div
+                  className="container px-8 flex mx-auto h-full"
+                  style={{
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                  }}>
+                  UniqueCode
+                </div>
+              </div>
               <div className="section">SECTION</div>
               <div className="section">SECTION</div>
             </div>
