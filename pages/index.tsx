@@ -15,12 +15,13 @@ const Home: React.FC = () => {
             <div>
               <div className="section">
                 <div
-                  className="container px-8 flex mx-auto h-full"
+                  className="container px-8 flex mx-auto h-full flex-col"
                   style={{
                     justifyContent: 'center',
                     alignItems: 'center',
                   }}>
                   <div className="text-4xl font-bold">UniqueCode</div>
+                  <div className="text-xl">세상을 바꾸는 청소년 팀</div>
                 </div>
               </div>
               <div className="section">SECTION</div>
