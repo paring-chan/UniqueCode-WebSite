@@ -17,86 +17,13 @@ class Menu extends Component<any, any> {
             alignItems: 'center',
           }}
           className="h-full flex">
-          <div className="p-12 h-full flex gap-12 w-full" style={{
-            overflow: 'auto',
-            alignItems: 'center',
-            // justifyContent: 'center'
-          }}>
-            <MenuItem
-              items={[
-                {
-                  label: 'FreeAI',
-                  link: '/projects/freeai',
-                  nextLink: true,
-                },
-                {
-                  label: 'StrawberryDonut',
-                  link: '/projects/strawberrydonut',
-                  nextLink: true,
-                },
-                {
-                  label: 'OliveToast',
-                  link: '/projects/olivetoast',
-                  nextLink: true,
-                },
-                {
-                  label: 'MiniBOT',
-                  link: '/projects/minibot',
-                  nextLink: true,
-                },
-              ]}
-              label="Projects"
-            />
-            <MenuItem
-              items={[
-                {
-                  label: 'FreeAI',
-                  link: '/projects/freeai',
-                  nextLink: true,
-                },
-                {
-                  label: 'StrawberryDonut',
-                  link: '/projects/strawberrydonut',
-                  nextLink: true,
-                },
-                {
-                  label: 'OliveToast',
-                  link: '/projects/olivetoast',
-                  nextLink: true,
-                },
-                {
-                  label: 'MiniBOT',
-                  link: '/projects/minibot',
-                  nextLink: true,
-                },
-              ]}
-              label="Projects"
-            />
-            <MenuItem
-              items={[
-                {
-                  label: 'FreeAI',
-                  link: '/projects/freeai',
-                  nextLink: true,
-                },
-                {
-                  label: 'StrawberryDonut',
-                  link: '/projects/strawberrydonut',
-                  nextLink: true,
-                },
-                {
-                  label: 'OliveToast',
-                  link: '/projects/olivetoast',
-                  nextLink: true,
-                },
-                {
-                  label: 'MiniBOT',
-                  link: '/projects/minibot',
-                  nextLink: true,
-                },
-              ]}
-              label="Projects"
-            />
+          <div
+            className="p-12 h-full flex gap-12 w-full"
+            style={{
+              overflow: 'auto',
+              alignItems: 'center',
+              // justifyContent: 'center'
+            }}>
             <MenuItem
               items={[
                 {
