@@ -15,7 +15,7 @@ const Home: React.FC = () => {
             <div>
               <div className="section">
                 <div
-                  className="container px-8 flex mx-auto h-full flex-col"
+                  className="container px-8 flex mx-auto h-full flex-col gap-2"
                   style={{
                     justifyContent: 'center',
                     alignItems: 'center',
