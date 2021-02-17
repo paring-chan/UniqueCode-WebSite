@@ -29,7 +29,16 @@ const Home: React.FC = () => {
                   </a>
                 </div>
               </div>
-              <div className="section">SECTION</div>
+              <div className="section">
+                <div
+                  className="container px-8 flex mx-auto h-full flex-col gap-2"
+                  style={{
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                  }}>
+                  <div className="text-3xl font-bold">TEST</div>
+                </div>
+              </div>
               <div className="section">SECTION</div>
             </div>
           )
