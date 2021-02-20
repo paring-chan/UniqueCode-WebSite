@@ -8,9 +8,9 @@ const LayoutHeader = () => {
       style={{ height: 44, justifyContent: 'center', alignItems: 'center' }}>
       <div className="w-full flex container">
         <MenuItem>UniqueCode</MenuItem>
-        <MenuItem>UniqueCode</MenuItem>
-        <MenuItem>UniqueCode</MenuItem>
-        <MenuItem>UniqueCode</MenuItem>
+        <MenuItem>Projects</MenuItem>
+        <MenuItem>Members</MenuItem>
+        <MenuItem>Recruit</MenuItem>
       </div>
     </div>
   )
