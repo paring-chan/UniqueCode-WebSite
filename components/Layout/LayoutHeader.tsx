@@ -9,8 +9,10 @@ const LayoutHeader = () => {
       style={{ height: 44, justifyContent: 'center', alignItems: 'center' }}>
       <div className="w-full flex container">
         <MenuItem>
-          <img src={Logo} alt="logo" />
-          UniqueCode
+          <div className="flex justify-center">
+            <img src={Logo} className="h-6" alt="logo" />
+            UniqueCode
+          </div>
         </MenuItem>
         <MenuItem>Projects</MenuItem>
         <MenuItem>Members</MenuItem>
