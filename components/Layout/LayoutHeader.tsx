@@ -10,7 +10,7 @@ const LayoutHeader = () => {
       <div className="w-full flex container">
         <MenuItem>
           <div className="flex justify-center">
-            <img src={Logo} className="h-6" alt="logo" />
+            <img src={Logo} className="h-6 mr-2" alt="logo" />
             UniqueCode
           </div>
         </MenuItem>
