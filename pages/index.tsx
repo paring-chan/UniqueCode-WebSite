@@ -7,7 +7,7 @@ import Button from '../components/Button'
 const Home: React.FC = () => {
   return (
     <Layout noSpacing noHeader>
-      <LayoutHeader fullpage />
+      <LayoutHeader />
       <ReactFullpage
         licenseKey="7A6BD9E1-8D334350-80A4BC34-64E1097D"
         anchors={['sec1', 'sec2', 'sec3']}
