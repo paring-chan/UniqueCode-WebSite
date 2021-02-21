@@ -24,7 +24,7 @@ const Home = () => {
           </a>
         </div>
         <img
-          className="w-1/2 mx-auto"
+          className="w-1/2 mx-auto mt-4"
           src={require('../assets/img/home__img1.png')}
           alt="Image"
         />
